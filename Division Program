@@ -1,0 +1,8 @@
+if __name__ == '__main__':
+    a = int(input())
+    b = int(input())
+
+#int output after division
+print(a//b)
+#Float Output after division
+print(a/b)
