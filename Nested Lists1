@@ -1,0 +1,33 @@
+from heapq import heappush
+
+if __name__ == '__main__':
+
+    a= []
+    for n in range(int(input())):
+        name = str(input())
+        score = float(input())
+        a.append([name, score])
+        #s = heappush (a, (str(name), float(score))
+    s = sorted(a, key = lambda x : x[1])
+    print(s)
+
+  
+    m=1
+    j=n-m
+    while n!=m:
+        if (s[n][1]!=s[j][1]):
+            print(s)
+        else:
+            (s[n][1]==s[j][1])
+            s.remove(s[n])
+            print(s)
+        m+=1
+        
+    
+    o=len(s)
+    p=0
+    q=o-p
+    while o!=p:
+        if (s[o-2][1]==s[p][1]):
+            print(s[p][0])
+        p+=1
